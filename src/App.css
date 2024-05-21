@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  background-color: rgb(248, 237, 225);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+
+}
+
+
+/* HEADER + NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: orangered;
+    font-family: "Roboto", sans-serif;
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(195, 156, 255);
+    transition: width 0.3 ease;
+  }
+
+  a:hover::after {
+    width: 80%;
+  }
+}
+
+.logout-btn {
+  border: none;
+  font-size: medium;
+  font-weight: bold;
+  color: rgb(195, 156, 255);
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.home-page h1 {
+  margin-top: 5%;
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+  color: rgb(255, 112, 222);
+}
+
+.home-page p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: rgb(252, 125, 79);
+}
+
+
+/* LOGIN PAGE */
+.login-form1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6%;
+  align-items: center;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 20%;
+
+  h2 {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(255, 112, 222);
+  }
+}
+
+.login-form2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: orangered;
+  font-family: "Roboto", sans-serif;
+
+  input {
+    background-color: transparent;
+    border: 1px solid rgb(195, 156, 255);
+    border-radius: 5px;
+    color: rgb(255, 112, 222);
+  }
+
+  .login-btn {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(195, 156, 255);
+    cursor: pointer;
+  }
+}
+
+
+/* REGISTER PAGE */
+.register-form1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6%;
+  align-items: center;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 20%;
+
+  h2 {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(255, 112, 222);
+  }
+}
+
+.register-form2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: orangered;
+  font-family: "Roboto", sans-serif;
+
+  input {
+    background-color: transparent;
+    border: 1px solid rgb(195, 156, 255);
+    border-radius: 5px;
+    color: rgb(255, 112, 222);
+  }
+
+  .register-btn {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(195, 156, 255);
+    cursor: pointer;
+  }
+}
+
+
+/* PROFILE PAGE */
+.profile-infos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6%;
+  align-items: center;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 20%;
+
+  h2 {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(255, 112, 222);
+  }
+
+  p {
+    color: orangered;
+    font-family: "Roboto", sans-serif;
+
+    .details {
+      color: rgb(255, 112, 222);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .link-edit {
+    font-family: "Roboto", sans-serif;
+    color: rgb(195, 156, 255);
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .link-edit:hover {
+    color: rgb(255, 112, 222);
+  }
+}
+
+
+/* EDIT PROFILE PAGE */
+.edit-form1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6%;
+  align-items: center;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 20%;
+
+  h2 {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(255, 112, 222);
+  }
+}
+
+.edit-form2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: orangered;
+  font-family: "Roboto", sans-serif;
+
+  input, textarea {
+    background-color: transparent;
+    border: 1px solid rgb(195, 156, 255);
+    border-radius: 5px;
+    color: rgb(255, 112, 222);
+  }
+
+  .edit-btn {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(195, 156, 255);
+    cursor: pointer;
+  }
+}
+
+
+/* CREATE POST PAGE */
+.create-post-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6%;
+  align-items: center;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  margin-left: 17%;
+
+  h2 {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(255, 112, 222);
+  }
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  textarea, input {
+    background-color: transparent;
+    border: 1px solid rgb(195, 156, 255);
+    border-radius: 5px;
+    color: orangered;
+  }
+
+  .post-btn {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(195, 156, 255);
+    cursor: pointer;
+  }
+}
+
+
+/* POST LIST PAGE */
+.posts-title {
+  margin-top: 10%;
+  text-align: center;
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: orangered;
+}
+
+
+
+/* POST ITEM PAGE */
+.post-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid orangered;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.post-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 8%;
+}
+
+.post-title {
+  color: rgb(255, 112, 222);
+  font-family: "Roboto", sans-serif;
+}
+
+.post-content {
+  color: orangered;
+  font-family: "Roboto", sans-serif;
+}
+
+
+/* USER PROFILE PAGE */
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6%;
+  align-items: center;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  margin-left: 17%;
+  font-family: "Roboto", sans-serif;
+  color: rgb(252, 125, 79);
+
+  h2 {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    color: rgb(255, 112, 222);
+  }
+
+  h3 {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    color: orangered;
+  }
+}
+
